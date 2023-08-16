@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 3em, 3em, 3em, 3em;
+}
+
+body {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+ body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 40px;
+}
+*/
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.boardClass {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  padding-right: 40px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.records {
+  padding: 10px 0;
+  text-align: left;
+}
+
+/*** TOGGLING RECORDS ***/
+
+.records {
+  display: none; /* Initially hide the section */
+}
+
+.records.active {
+  display: block; /* Show the section when active class is applied */
+}
+
+/*** TITLE TEXT***/
+.titleText {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 20pt;
+}
+
+/*** POPUP RECORD INPUT ***/
+.name-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.name-popup label {
+  font-weight: bold;
+}
+
+.name-popup input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.name-popup button {
+  padding: 8px 16px;
+  background-color: #1d7bf6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.name-popup button:hover {
+  background-color: #ff3838;
+}
+/*************************************/
+
+/*** DISPLAYING SCORES AND NAMES FORMATTING ***/
+
+.recordedName {
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recordedName .movesNumbers {
+  margin-left: auto;
+}
+/********************************************/
+
+BestScoresButton {
+  margin-right: auto;
+  display: flex;
+}
